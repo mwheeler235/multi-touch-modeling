@@ -8,5 +8,5 @@ Marketers typically have control over Customer touchpoints (Type of channel and 
 The first step is to train an LSTM model on customer journey data. For each customer, we need:
 
 * The sequence of touchpoints
-* Status of conversion
+* Status of conversion 
 * Customer Features like Age and Income
