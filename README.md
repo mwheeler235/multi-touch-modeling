@@ -10,3 +10,5 @@ The first step is to train an LSTM model on customer journey data. For each cust
 * The sequence of touchpoints
 * Status of conversion 
 * Customer Features like Age and Income
+
+Given that the number of possible Channel journeys increases exponentially, we can leverage a greedy algorithm like Beam to locate optimal journeys. 
