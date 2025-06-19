@@ -1,36 +1,36 @@
 // Beam Search Tree
 digraph {
 	rankdir=LR
-	"55d1ec2d-4545-4ed9-b5ff-a83cb9b74c3b" [label="email
-prob: 5.9%"]
-	"806c6068-a7b9-48b1-8535-39261ebcb253" [label="email -> direct
-prob: 43.7%"]
-	"55d1ec2d-4545-4ed9-b5ff-a83cb9b74c3b" -> "806c6068-a7b9-48b1-8535-39261ebcb253"
-	"a9ba6066-881d-42fe-b49c-8ec1a59b4b9c" [label="email -> search
-prob: 37.4%"]
-	"55d1ec2d-4545-4ed9-b5ff-a83cb9b74c3b" -> "a9ba6066-881d-42fe-b49c-8ec1a59b4b9c"
-	"aed90e01-b0fe-4750-982a-885a08325d31" [label="email -> social
-prob: 35.4%"]
-	"55d1ec2d-4545-4ed9-b5ff-a83cb9b74c3b" -> "aed90e01-b0fe-4750-982a-885a08325d31"
-	"1c9d6966-0cda-4369-961b-ca60cb1eb8ed" [label="email -> retargeting
-prob: 18.7%"]
-	"55d1ec2d-4545-4ed9-b5ff-a83cb9b74c3b" -> "1c9d6966-0cda-4369-961b-ca60cb1eb8ed"
-	"3f5877d8-6a5a-4a64-98c3-e2b432a7e8ff" [label="email -> email
-prob: 5.4%"]
-	"55d1ec2d-4545-4ed9-b5ff-a83cb9b74c3b" -> "3f5877d8-6a5a-4a64-98c3-e2b432a7e8ff"
-	"daa20d89-808d-47d0-96d1-b2f026acd788" [label="email -> retargeting -> search
-prob: 61.8%"]
-	"3f5877d8-6a5a-4a64-98c3-e2b432a7e8ff" -> "daa20d89-808d-47d0-96d1-b2f026acd788"
-	"80538464-2df2-481a-8a03-59d59e5b4c69" [label="email -> search -> retargeting
-prob: 49.5%"]
-	"3f5877d8-6a5a-4a64-98c3-e2b432a7e8ff" -> "80538464-2df2-481a-8a03-59d59e5b4c69"
-	"49c321af-3c54-4409-9c2b-5cdc9c15dec5" [label="email -> search -> direct
-prob: 44.6%"]
-	"3f5877d8-6a5a-4a64-98c3-e2b432a7e8ff" -> "49c321af-3c54-4409-9c2b-5cdc9c15dec5"
-	"2a0c2f58-ceb9-4ddd-bb38-1ea53219e131" [label="email -> retargeting -> direct
-prob: 43.4%"]
-	"3f5877d8-6a5a-4a64-98c3-e2b432a7e8ff" -> "2a0c2f58-ceb9-4ddd-bb38-1ea53219e131"
-	"4e2aef60-e58a-4f1e-9acd-f2ec3dd4219b" [label="email -> email -> direct
-prob: 42.9%"]
-	"3f5877d8-6a5a-4a64-98c3-e2b432a7e8ff" -> "4e2aef60-e58a-4f1e-9acd-f2ec3dd4219b"
+	"1385e6f5-3a11-4431-b42b-3c0afe5e8cb6" [label="Direct Traffic
+prob: 50.4%"]
+	"ba3ffd5b-e8bd-4031-9b47-7a276b459aeb" [label="Direct Traffic -> Display Ads
+prob: 85.4%"]
+	"1385e6f5-3a11-4431-b42b-3c0afe5e8cb6" -> "ba3ffd5b-e8bd-4031-9b47-7a276b459aeb"
+	"4c75be6c-5a98-419b-b42a-a1a3fc380323" [label="Direct Traffic -> Email
+prob: 81.9%"]
+	"1385e6f5-3a11-4431-b42b-3c0afe5e8cb6" -> "4c75be6c-5a98-419b-b42a-a1a3fc380323"
+	"33340660-4f81-408d-9366-e4c7feabb80f" [label="Direct Traffic -> Social Media
+prob: 77.7%"]
+	"1385e6f5-3a11-4431-b42b-3c0afe5e8cb6" -> "33340660-4f81-408d-9366-e4c7feabb80f"
+	"a99171fc-a359-49eb-90cc-8d5c1f4d6327" [label="Direct Traffic -> Search Ads
+prob: 71.3%"]
+	"1385e6f5-3a11-4431-b42b-3c0afe5e8cb6" -> "a99171fc-a359-49eb-90cc-8d5c1f4d6327"
+	"0d82e9b8-1359-4438-b082-985e197ebbd2" [label="Direct Traffic -> Direct Traffic
+prob: 70.2%"]
+	"1385e6f5-3a11-4431-b42b-3c0afe5e8cb6" -> "0d82e9b8-1359-4438-b082-985e197ebbd2"
+	"4c725a5c-35a4-4857-b926-fae4958dec42" [label="Direct Traffic -> Search Ads -> Social Media
+prob: 100.0%"]
+	"0d82e9b8-1359-4438-b082-985e197ebbd2" -> "4c725a5c-35a4-4857-b926-fae4958dec42"
+	"a0cd8ad2-c61a-4f91-9bd2-2a2ddd40e886" [label="Direct Traffic -> Social Media -> Referral
+prob: 100.0%"]
+	"0d82e9b8-1359-4438-b082-985e197ebbd2" -> "a0cd8ad2-c61a-4f91-9bd2-2a2ddd40e886"
+	"efb3342d-03cb-459b-ac07-44b49962ce74" [label="Direct Traffic -> Search Ads -> Referral
+prob: 100.0%"]
+	"0d82e9b8-1359-4438-b082-985e197ebbd2" -> "efb3342d-03cb-459b-ac07-44b49962ce74"
+	"032dbeaa-0b45-441d-aebd-c35df6c3160f" [label="Direct Traffic -> Search Ads -> Display Ads
+prob: 100.0%"]
+	"0d82e9b8-1359-4438-b082-985e197ebbd2" -> "032dbeaa-0b45-441d-aebd-c35df6c3160f"
+	"a9e565fe-ecb6-4a31-a091-5f47a407e024" [label="Direct Traffic -> Email -> Direct Traffic
+prob: 100.0%"]
+	"0d82e9b8-1359-4438-b082-985e197ebbd2" -> "a9e565fe-ecb6-4a31-a091-5f47a407e024"
 }
